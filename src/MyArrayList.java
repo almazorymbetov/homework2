@@ -11,6 +11,22 @@ public class MyArrayList<T> implements MyList<T>{
         }
         array[size++] = data;
     }
+    public void add_first(T data){
+        if(size==array.length){
+            expand();
+        }
+        for(int i=size;i>0;i--){
+            array[i] = array[i-1];
+        }
+        array[0 ] = data;
+        size++;
+    }
+    public void add_last(T data){
+        if (size == array.length) {
+            expand();
+        }
+        array[size++] = data;
+    }
     public void delete(int index){
         check(index);
         for(int i=index; i<size; i++){
