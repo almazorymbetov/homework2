@@ -1,7 +1,7 @@
-public class ArrayList<T> implements List<T>{
+public class MyArrayList<T> implements List<T>{
     private T[] array;
     private int size;
-    public ArrayList(){
+    public MyArrayList(){
         array = (T[]) new Object[5];
         size = 0;
     }
@@ -12,10 +12,8 @@ public class ArrayList<T> implements List<T>{
         array[size++] = data;
     }
     public void delete(int index){
-        if(index < 0 || index >= size){
-            throw new IndexOutOfBoundsException("Invalid index");
-        }
-        for(int i=index; i<size-1; i++){
+        check(index);
+        for(int i=index; i<size; i++){
             array[i] = array[i+1];
         }
         array[size-1] = null;
@@ -24,6 +22,11 @@ public class ArrayList<T> implements List<T>{
     public void show(){
         for(int i=0; i<size; i++){
             System.out.println((T)array[i]+" ");
+        }
+    }
+    public void check(int index){
+        if(index < 0 || index >= size){
+            throw new IndexOutOfBoundsException("Штсщккусе штвуч");
         }
     }
     public void expand(){
