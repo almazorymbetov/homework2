@@ -1,6 +1,5 @@
 public class Main{
     public static void main(String[] args){
-        /*
         MyArrayList<Object> myArrayList = new MyArrayList<>();
         myArrayList.add(1);
         myArrayList.add(2.0);
@@ -23,7 +22,7 @@ public class Main{
         myArrayList.clear();
         myArrayList.show();
         System.out.println(myArrayList.array_size()); //deleted everythin in array
-         */
+        /*
         // - - - //
         MyLinkedList<Object> myLinkedList = new MyLinkedList<>();
         myLinkedList.add(1);
@@ -47,6 +46,6 @@ public class Main{
         myLinkedList.clear();
         myLinkedList.show();
         System.out.println(myLinkedList.array_size()); //deleted everythin in array
-
+        */
     }
 }

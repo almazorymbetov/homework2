@@ -58,7 +58,7 @@ public class MyLinkedList<T> implements MyList<T>{
     public void delete(int index){
         check(index);
         Node<T> C_node = head;
-        for(int i=0;i<size-1;i++){
+        for(int i=0;i<index;i++){
             C_node = C_node.next;
         }
         C_node.next = C_node.next.next;
@@ -92,7 +92,7 @@ public class MyLinkedList<T> implements MyList<T>{
     public T get(int index){
         check(index);
         Node<T> C_node = head;
-        for(int i=0;i<size-1;i++){
+        for(int i=0;i<index;i++){
             C_node = C_node.next;
         }
         return C_node.data;
