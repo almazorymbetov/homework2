@@ -29,7 +29,7 @@ public class MyArrayList<T> implements MyList<T>{
     }
     public void delete(int index){
         check(index);
-        for(int i=index; i<size; i++){
+        for(int i=index; i<size-1; i++){
             array[i] = array[i+1];
         }
         array[size-1] = null;
@@ -47,8 +47,11 @@ public class MyArrayList<T> implements MyList<T>{
         size--;
     }
     public void show(){
-        for(int i=0; i<size-1; i++){
-            System.out.println((T)array[i]+" ");
+        if(size==0){
+            System.out.println("There is nothing to show");
+        }
+        for(int i=0; i<size; i++){
+            System.out.println("Element under index " + i + " " + "is " + (T)array[i]);
         }
     }
     public void check(int index){
