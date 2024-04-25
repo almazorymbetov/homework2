@@ -1,4 +1,4 @@
-public class MyArrayList<T> implements List<T>{
+public class MyArrayList<T> implements MyList<T>{
     private T[] array;
     private int size;
     public MyArrayList(){

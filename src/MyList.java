@@ -1,4 +1,4 @@
-public interface List<T>{
+public interface MyList<T>{
     void add(T data);
     void delete(int index);
     void show();
