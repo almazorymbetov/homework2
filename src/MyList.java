@@ -5,7 +5,6 @@ public interface MyList<T>{
     void delete(int index);
     void delete_first();
     void delete_last();
-    void sort();
     void show();
     T get(int index);
     T get_first();

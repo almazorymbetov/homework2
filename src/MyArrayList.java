@@ -64,11 +64,6 @@ public class MyArrayList<T> implements MyList<T>{
         System.arraycopy(array,0,newArray,0,size);
         array = newArray;
     }
-    public void sort(){
-        if(size<=1) {
-            return;
-        }
-    }
     public void clear(){
         array = (T[]) new Object[5];
         size = 0;
