@@ -13,8 +13,8 @@ public interface MyList<T>{
     void check(int index);
     void expand();
     int index_of(Object object);
-    int last_index_of(Object object);
+    int last_index_of();
     boolean is_exist(Object object);
-    int size();
+    int array_size();
     void clear();
 }
