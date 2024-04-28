@@ -1,3 +1,15 @@
+/*
+first of all i created two classes: myarraylist and mylinkedlist, where i added operations such as
+add, add first, add last, remove, remove first, remove last, get index (or last index),
+get element(first, or last), check is exist element called "...",
+clear list
+
+and also i created mylist interface, which can be useful during switching from linked to array list
+or reversively
+
+then i tried to implement mystack, myqueue and myminheap, which represents data structures as stack,
+queue and binary tree
+ */
 public class Main{
     public static void main(String[] args){
         MyArrayList<Object> myArrayList = new MyArrayList<>();

@@ -1,3 +1,7 @@
+/*
+mystack is implementation of myarraylist/linkedlist as stack (lifo method)
+where elements adding and removing in the top of stack
+ */
 public class MyStack<T>{
     private MyArrayList<T> list;
     public MyStack(){

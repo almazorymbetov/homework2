@@ -1,3 +1,7 @@
+/*
+i created mylinkedlist with the same operations as demonstrated in myarraylist
+here all data are stored as nodes with values, and there is no fixed size of list
+ */
 public class MyLinkedList<T> implements MyList<T>{
     private Node<T> head;
     private int size;

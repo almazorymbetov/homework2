@@ -1,3 +1,7 @@
+/*
+myqueue is implementation of myarraylist/linkedlist as queue data structure
+ we insert element through enqueue, and remove through dequeue respectively
+ */
 public class MyQueue<T>{
     private MyArrayList<T> list;
     public MyQueue(){
@@ -5,6 +9,9 @@ public class MyQueue<T>{
     }
     public void enqueue(){
         return list.delete_first();
+    }
+    public void dequeue(){
+
     }
     public T peek(){
         return list.get_first();

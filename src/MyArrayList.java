@@ -1,3 +1,12 @@
+/*
+myarraylist is a dynamic array that uses or implements mylist interface
+this one can store any type of values by using generic <T>
+if we add something, or delete, then the size of array will change dynamically
+here we can add, add as 0 index, add as last one element
+delete, get element, show index the same way as previously
+also we can show whole list
+check is exist element in this array
+ */
 public class MyArrayList<T> implements MyList<T>{
     private T[] array;
     private int size;

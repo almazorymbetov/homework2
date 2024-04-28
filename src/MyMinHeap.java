@@ -1,3 +1,7 @@
+/*
+myminheap is implementation of myarraylist/linkedlist as mini heap data structure with parent, children nodes
+ we insert element through enqueue, and remove through dequeue respectively
+ */
 import static java.util.Collections.swap;
 public class MyMinHeap<T>{
     private MyArrayList<Integer> heap;
